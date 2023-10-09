@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: black;
+}
+header{
+  position: fixed;
+  right: 0;
+  top:0;
+  z-index: 1000;
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 9%;
+  background: transparent;
+  background-color: black;
+}
+.logo{
+  font-size: 30px;
+  font-family: 'Black Ops One', cursive;
+  color:white;
+}
+#logoimg{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-left: 0;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: white;
+  padding: 8px;
+  margin-left: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid white;
+}
+#menu-icon{
+  color: white;
+  font-size: 30px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+.btn{
+  background-color: yellow;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 7px;
+  padding:10px 30px;
+  margin-left: 10px;
+  cursor:pointer;
+  margin-left: auto;
+}
+
+.btn:hover{
+  transform: scale(1.2);
+  border:2px solid white;
+  background-color: black;
+  color: white;
+}
+.main{
+  height: 100%;
+  width:100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: 1fr 4fr 5fr ;
+  grid-template-rows: 1;
+  gap:20px;
+}
+.icons{
+  display: inline-flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.icons a{
+  background-color: black;
+  color:white;
+  font-size: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+  padding-right: 0;
+}
+.main-txt h1{
+    color: white;
+    font-family: 'Play', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.main p{
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.main-txt a{
+  background-color: yellow;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: black;
+  border:2px solid yellow;
+  padding: 8px;
+  border-radius: 7px;
+  margin: 20px;
+  cursor:grab;
+}
+.main a:hover{
+  transform: scale(1.5);
+  border:2px solid white;
+  background-color: black;
+  color: white;
+}
